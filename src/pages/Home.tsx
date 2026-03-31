@@ -4,7 +4,9 @@ import { useGSAP } from "@gsap/react";
 import CursorHover from "../components/CursorHover";
 import Button from "../components/Button";
 import { FaDownload } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 const Home = () => {
+  const { t, i18n } = useTranslation();
   const arr = Array.from({ length: 25 }, (_, i) => i);
 
   const handleDownload = () => {
@@ -26,11 +28,11 @@ const Home = () => {
         opacity: 0,
         duration: 0.5,
         delay: 0.2 * i,
-      })
+      }),
     );
 
     imgSquares.forEach((square, i) =>
-      gsap.from(square, { opacity: 0, duration: 0.5, delay: 0.3 * i })
+      gsap.from(square, { opacity: 0, duration: 0.5, delay: 0.3 * i }),
     );
 
     gsap.from(".profile-img", {
@@ -54,14 +56,23 @@ const Home = () => {
       <div className="flex-1 min-h-[calc(100vh-4rem)] p-5 flex flex-col gap-5 justify-center">
         <CursorHover>
           <div className="home-title text-[48px] md:text-7xl font-name text-secondary/80 leading-none">
-            <div className="text-4xl">I'm</div>
+            <div className="text-4xl">{t("im")}</div>
             <div className="flex text-8xl font-black text-secondary">
-              <div className="name">T</div>
-              <div className="name">A</div>
-              <div className="name">H</div>
-              <div className="name">A</div>
+              {i18n.language === "en" ? (
+                <>
+                  <div className="name">T</div>
+                  <div className="name">A</div>
+                  <div className="name">H</div>
+                  <div className="name">A</div>
+                </>
+              ) : (
+                <>
+                  <div className="name">ط</div>
+                  <div className="name">ـه</div>
+                </>
+              )}
             </div>
-            <div>FRONT-END DEVELOPER & WEB DESIGNER</div>
+            <div className="uppercase">{t("jobTitle")}</div>
           </div>
         </CursorHover>
         <div className="flex flex-wrap gap-4 sm:gap-5 ">
@@ -72,7 +83,7 @@ const Home = () => {
               },
             }}
           >
-            Projects
+            {t("projects")}
           </Button>
           <Button
             className="flex gap-1 sm:gap-3 items-center px-1"
@@ -80,7 +91,7 @@ const Home = () => {
               onClick: handleDownload,
             }}
           >
-            Download CV <FaDownload />
+            {t("downloadCV")} <FaDownload />
           </Button>
         </div>
       </div>
@@ -89,7 +100,7 @@ const Home = () => {
         <div className="bg-secondary/50 w-full md:w-[480px] xl:w-[320xp] xxl:w-[480px] aspect-square">
           <CursorHover className="w-full h-full">
             <div className="w-full h-full grid grid-cols-5 grid-rows-5 relative group overflow-hidden">
-              <div className="w-full h-full absolute top-0 left-0">
+              <div className="w-full h-full absolute top-0 start-0">
                 <img
                   src="/profile.jpg"
                   alt=""

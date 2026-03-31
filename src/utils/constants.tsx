@@ -175,10 +175,10 @@ export const SKILLS: SkillType[] = [
 
 export const PROJECTS: ProjectType[] = [
   {
-    name: "movies website",
+    name: "movies free",
     img: "/movies.png",
     logo: "/el3wamy-icon.png",
-    visite_link: "https://el3wamy-movies.netlify.app",
+    visite_link: "https://movies-freee.netlify.app",
     technologies: [SKILLS[4], SKILLS[7], SKILLS[6], SKILLS[8]],
   },
   {

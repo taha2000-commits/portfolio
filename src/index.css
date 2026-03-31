@@ -22,3 +22,9 @@
   --primary: 0, 0, 0;
   --secondary: 255, 255, 255;
 }
+
+.aboutme span {
+  color: rgba(var(--secondary));
+  font-size: 22px;
+  font-weight: 900;
+}

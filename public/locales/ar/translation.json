@@ -1,0 +1,19 @@
+{
+  "jobTitle": "مطوّر واجهات أمامية ومصمّم ويب",
+  "im": "أنـا",
+  "projects": "المشاريع",
+  "downloadCV": "تحميل السيرة الذاتية",
+  "aboutMe": "نبذة عني",
+  "intro": "مطوّر واجهات أمامية تفاعلي.",
+  "description": "أنا <span className=\"bold-span text-[22px] font-black text-secondary\">طه محمود نورالدين</span>، مهندس برمجيات مصري يبلغ من العمر 24 عامًا <span className=\"bold-span text-[22px] font-black text-secondary\">ومطور واجهات أمامية</span>. تخرجت بدرجة البكالوريوس في علوم الحاسب. أستمتع بحل مشاكل التصميم، وإنشاء واجهات مستخدم بديهية، وتطوير تجارب وتطبيقات ويب جذابة. لدي خبرة في تقنيات الواجهات الأمامية وواجهات المستخدم مثل <span className=\"bold-span text-[22px] font-black text-secondary\">HTML5، CSS3، Sass، Tailwind CSS، Bootstrap، JavaScript، TypeScript و ReactJS.</span>",
+  "cta": "استعد ببدلة الفضاء الخاصة بك وأخبرني بأفكارك لتطوير موقع أحلامك.",
+  "skills": "المهارات",
+  "skillsIntro": "مهاراتي والتقنيات التي أستخدمها",
+  "my_projects": "مشاريعي",
+  "visit": "زيارة",
+  "show_details": "عرض التفاصيل",
+  "collaboration_message": "متحمس للتعاون؟ تواصل معي لتحويل أفكارك الرقمية إلى واقع. سواء كان ذلك إعادة تصميم، مشروعًا جديدًا، أو استفسارًا بسيطًا، أنا هنا لتحقيق رؤيتك على الويب. دعنا نتواصل ونصنع شيئًا رائعًا معًا",
+  "lets_work": "لنبدأ العمل",
+  "contact_me": "تواصل معي",
+  "home": "الرئيسية"
+}

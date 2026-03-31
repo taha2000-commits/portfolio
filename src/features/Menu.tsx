@@ -1,13 +1,14 @@
+import { t } from "i18next";
 import CursorHover from "../components/CursorHover";
 import HorizontalSocials from "../components/HorizontalSocials";
 import MenuIcon from "../components/MenuIcon";
 import useMenu from "../context/useMenu";
 const SECTIONS: { id: string; label: string }[] = [
-  { id: "#home", label: "Home" },
-  { id: "#about", label: "About Me" },
-  { id: "#skills", label: "Skills" },
-  { id: "#projects", label: "Projects" },
-  { id: "#contact", label: "Contact" },
+  { id: "#home", label: "home" },
+  { id: "#about", label: "aboutMe" },
+  { id: "#skills", label: "skills" },
+  { id: "#projects", label: "projects" },
+  { id: "#contact", label: "contact_me" },
 ];
 
 const Menu = () => {
@@ -15,7 +16,7 @@ const Menu = () => {
 
   return (
     <div
-      className={`menu h-screen fixed top-0 left-0 bg-primary z-[500] flex flex-col justify-center gap-20 overflow-hidden transition-all duration-700 ${
+      className={`menu h-screen fixed top-0 start-0 bg-primary z-[500] flex flex-col justify-center gap-20 overflow-hidden transition-all duration-700 ${
         isMenuOpened ? "w-screen" : "w-0"
       }`}
     >
@@ -31,7 +32,7 @@ const Menu = () => {
                 window.location.href = sec.id;
               }}
             >
-              {sec.label}
+              {t(sec.label)}
             </li>
           </CursorHover>
         ))}

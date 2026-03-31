@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  safelist: ["text-[22px]", "font-black", "text-secondary", "bold-span"],
   theme: {
     extend: {
       colors: {
@@ -23,4 +24,5 @@ export default {
   },
   darkMode: "selector",
   plugins: [],
+  safelist: ["text-[22px]", "font-black", "text-secondary", "bold-span"],
 };

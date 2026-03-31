@@ -23,7 +23,7 @@ const CustomMouse = () => {
     callback: (dotElement, e) => {
       dotElement.animate(
         { left: `${e.clientX}px`, top: `${e.clientY}px` },
-        { duration: 500, fill: "forwards" }
+        { duration: 500, fill: "forwards" },
       );
     },
   });

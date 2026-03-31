@@ -25,12 +25,12 @@ const Sidebar = () => {
         });
       });
     },
-    { scope: sidebar }
+    { scope: sidebar },
   );
   return (
     <div
       ref={sidebar}
-      className="sidebar hidden sm:block fixed h-[calc(100vh-4rem)] top-[4rem] left-0 pl-2 sm:pl-7 z-[100]"
+      className="sidebar hidden sm:block fixed h-[calc(100vh-4rem)] top-[4rem] start-0 ps-2 sm:ps-7 z-[100]"
     >
       <div className="w-full h-full flex flex-col items-center justify-center gap-10 py-14 text-3xl">
         <div className="h-full w-[1px] bg-secondary"></div>

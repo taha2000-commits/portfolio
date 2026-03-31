@@ -20,9 +20,9 @@ const Transition = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <main ref={container} className="w-full h-full relative">
-      <div className="banner w-1/3 h-full bg-green-400 absolute left-0"></div>
-      <div className="banner w-1/3 h-full bg-red-400 absolute left-1/3"></div>
-      <div className="banner w-1/3 h-full bg-blue-400 absolute left-2/3"></div>
+      <div className="banner w-1/3 h-full bg-green-400 absolute start-0"></div>
+      <div className="banner w-1/3 h-full bg-red-400 absolute start-1/3"></div>
+      <div className="banner w-1/3 h-full bg-blue-400 absolute start-2/3"></div>
       {children}
     </main>
   );

@@ -5,6 +5,7 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import HorizontalSocials from "../components/HorizontalSocials";
+import { t } from "i18next";
 
 const Contact = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -33,18 +34,15 @@ const Contact = () => {
       //   },
       // });
     },
-    { scope: container }
+    { scope: container },
   );
   return (
     <div id="contact" className="pt-[4rem]" ref={container}>
-      <SectionHeader title="Let's Work" titleTwo="Contact ME" />
+      <SectionHeader title={t("lets_work")} titleTwo={t("contact_me")} />
       <div className="flex flex-col xl:flex-row  gap-x-16 gap-y-24">
         <div className="w-full h-auto flex-1 flex flex-col gap-16 justify-evenly">
           <p className="left-sec-txt text-xl sm:text-2xl font-txt text-secondary/90">
-            Excited to collaborate? Reach out to bring your digital ideas to
-            life. Whether it's a redesign, a fresh project, or a simple query,
-            I'm here to make your web vision a reality. Let's connect and create
-            something awesome together
+            {t("collaboration_message")}
           </p>
           <HorizontalSocials />
         </div>

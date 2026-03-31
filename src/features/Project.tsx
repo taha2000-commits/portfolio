@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import Button from "../components/Button";
 import { ProjectType } from "../types/types";
 
@@ -10,22 +11,24 @@ const Project = ({ project }: { project: ProjectType }) => {
           alt=""
           className="w-full h-full object-cover bg-top"
         />
-        <div className="w-9 aspect-square rounded-full overflow-hidden absolute top-4 left-4">
+        <div className="w-9 aspect-square rounded-full overflow-hidden absolute top-4 start-4">
           <img
             src={project.logo}
             alt=""
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="hidden group-hover:grid w-full h-full absolute top-0 left-0 place-items-center bg-secondary/20">
+        <div className="hidden group-hover:grid w-full h-full absolute top-0 start-0 place-items-center bg-secondary/20">
           <Button className="text-3xl font-name font-black text-primary">
             <a href={`${project.visite_link}`} target="_blank">
-              Visit
+              {t("visit")}
             </a>
           </Button>
         </div>
       </div>
-      <h5 className="text-3xl from-black font-name py-4">{project.name}</h5>
+      <h5 dir="ltr" className="text-3xl from-black font-name py-4 text-center">
+        {project.name}
+      </h5>
       <div className="transition-all flex flex-col gap-5 overflow-hidden">
         <div className="flex flex-wrap items-center justify-center gap-1">
           {project.technologies.map((technology, i) => (
@@ -37,7 +40,7 @@ const Project = ({ project }: { project: ProjectType }) => {
           ))}
         </div>
         <div className="">
-          <Button className="w-full rounded-xl">Show Details</Button>
+          <Button className="w-full rounded-xl">{t("show_details")}</Button>
         </div>
       </div>
     </div>
