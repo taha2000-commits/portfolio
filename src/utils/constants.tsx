@@ -199,7 +199,7 @@ export const PROJECTS: ProjectType[] = [
     name: "Front-End Developer portfolio",
     img: "/portfolio.png",
     logo: "/logo-b.png",
-    visite_link: "https://taha-mahmoud-portfolio.netlify.app",
+    visite_link: "https://taha-pro-portfolio.netlify.app",
     technologies: [SKILLS[9], SKILLS[8], SKILLS[5]],
   },
   {
