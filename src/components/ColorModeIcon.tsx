@@ -9,13 +9,13 @@ const ColorModeIcon = () => {
   return (
     <CursorHover>
       <div
-        className="bg-secondary/20 p-1 md:p-2 2xl:p-3 rounded-full"
+        className="bg-secondary/20 p-2 rounded-full"
         onClick={() => {
           if (mode == ModeEnum.DARK) setMode(ModeEnum.LIGHT);
           else setMode(ModeEnum.DARK);
         }}
       >
-        <FaMoon size={22} />
+        <FaMoon size={16} />
       </div>
     </CursorHover>
   );

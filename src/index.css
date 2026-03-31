@@ -16,11 +16,13 @@
 .light {
   --primary: 255, 255, 255;
   --secondary: 0, 0, 0;
+  --third: 60, 180, 0;
 }
 
 .dark {
   --primary: 0, 0, 0;
   --secondary: 255, 255, 255;
+  --third: 180, 0, 0;
 }
 
 .aboutme span {

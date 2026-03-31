@@ -7,6 +7,7 @@ export default {
       colors: {
         primary: "rgba(var(--primary))",
         secondary: "rgba(var(--secondary))",
+        cc: "red",
       },
       fontFamily: {
         txt: ["Marcellus", "serif"],

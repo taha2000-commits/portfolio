@@ -16,6 +16,9 @@ import Home from "./pages/Home";
 import Menu from "./features/Menu";
 import "./i18next";
 import { useTranslation } from "react-i18next";
+import { useIsChangingLangContext } from "./context/IsChangingLangContext";
+import { t } from "i18next";
+import { BarLoader } from "react-spinners";
 
 const AppLayout = () => {
   const { i18n } = useTranslation();
@@ -27,8 +30,10 @@ const AppLayout = () => {
     () => {
       gsap.from(".nav", { translateY: "-100%", duration: 1 });
     },
-    { scope: container }
+    { scope: container },
   );
+  const { isChanging } = useIsChangingLangContext();
+
   useEffect(() => {
     if (i18n.language == "ar") document.documentElement.dir = "rtl";
     else document.documentElement.dir = "ltr";
@@ -45,6 +50,14 @@ const AppLayout = () => {
           mode === ModeEnum.DARK ? "h-full" : "h-0"
         }`}
       ></div>
+
+      <div
+        className={`text-2xl flex flex-col gap-5 items-center justify-center text-secondary font-extrabold fixed w-full h-screen top-0 start-0 bg-primary z-[100000] transition-all duration-1000 origin-left ${!isChanging ? "scale-x-0" : "scale-x-100"}`}
+      >
+        {t("language_changing")}
+        <BarLoader color={mode === ModeEnum.DARK ? "white" : "black"} />
+      </div>
+
       <div className="nav w-full h-16 bg-primary sticky top-0 z-[100]">
         <Navbar />
       </div>

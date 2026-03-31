@@ -2,9 +2,12 @@ import MenuIcon from "../components/MenuIcon";
 import ColorModeIcon from "../components/ColorModeIcon";
 import clsx from "clsx";
 import useChangeLanguage from "../hooks/useChangeLanguage";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const { changeLanguage } = useChangeLanguage();
+  const { i18n } = useTranslation();
+
   return (
     <div
       dir="ltr"
@@ -19,32 +22,27 @@ const Navbar = () => {
           "flex items-center gap-5 sm:gap-7 bg-primary h-full px-7",
         )}
       >
-        <div className="bg-red-500 p-1 rounded-full overflow-hidden">
-          <span
-            className="bg-green-300 py-1 px-2 rounded-l-full"
-            onClick={() => {
-              changeLanguage("ar");
-            }}
-          >
-            ar
-          </span>
-          <span
-            className="bg-blue-300 py-1 px-2 rounded-r-full"
-            onClick={() => {
-              changeLanguage("en");
-            }}
-          >
-            en
-          </span>
+        <div className="bg-secondary rounded-full text-primary text-sm md:text-lg">
+          {i18n.language == "en" ? (
+            <span
+              className="py-1 px-2"
+              onClick={() => {
+                changeLanguage("ar");
+              }}
+            >
+              العربية
+            </span>
+          ) : (
+            <span
+              className="py-1 px-2"
+              onClick={() => {
+                changeLanguage("en");
+              }}
+            >
+              English
+            </span>
+          )}
         </div>
-        {/* <button
-          onClick={() => {
-            if (i18n.language == "en") i18n.changeLanguage("ar");
-            else i18n.changeLanguage("en");
-          }}
-        >
-          safdas
-        </button> */}
         <ColorModeIcon />
         <MenuIcon />
       </div>
