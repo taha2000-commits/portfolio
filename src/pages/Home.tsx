@@ -104,7 +104,7 @@ const Home = () => {
                 <img
                   src="/profile.jpg"
                   alt=""
-                  className="profile-img w-full h-full overflow-hidden object-cover object-top grayscale-[100%] transition-all duration-500 group-hover:grayscale-0"
+                  className="profile-img w-full h-full overflow-hidden object-cover object-center grayscale-[100%] transition-all duration-500 group-hover:grayscale-0"
                 />
               </div>
               {arr.map((i) => (
