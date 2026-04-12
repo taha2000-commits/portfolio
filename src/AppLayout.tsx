@@ -19,6 +19,7 @@ import { useTranslation } from "react-i18next";
 import { useIsChangingLangContext } from "./context/IsChangingLangContext";
 import { t } from "i18next";
 import { BarLoader } from "react-spinners";
+import ProfessionalExperience from "./pages/ProfessionalExperience";
 
 const AppLayout = () => {
   const { i18n } = useTranslation();
@@ -68,6 +69,7 @@ const AppLayout = () => {
         <div className="h-full w-full overflow-hidden flex flex-col gap-5 items-center justify-center sm:ps-20">
           <Home />
           <About />
+          <ProfessionalExperience />
           <Skills />
           <Projects />
           <Contact />

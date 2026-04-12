@@ -6,7 +6,7 @@ import { MdEmail } from "react-icons/md";
 export const CONTACT_LINKS = [
   {
     icon: <FaGithub />,
-    link: "https://github.com/TahaMuhmoud",
+    link: "https://github.com/taha2000-commits",
   },
   {
     icon: <FaLinkedin />,
@@ -24,7 +24,7 @@ export const CONTACT_LINKS = [
   // },
   {
     icon: <MdEmail />,
-    link: "mailto:elawamytaha@gmail.com",
+    link: "mailto:tahamahmoudai@gmail.com",
   },
   {
     icon: <FaWhatsapp />,
@@ -185,7 +185,7 @@ export const PROJECTS: ProjectType[] = [
     name: "ATARY games",
     img: "/atary-mockup.png",
     logo: "/atary-games-icon.png",
-    visite_link: "https://atary-games.netlify.app",
+    visite_link: "https://atary.netlify.app",
     technologies: [SKILLS[9], SKILLS[8], SKILLS[5], SKILLS[11]],
   },
   {

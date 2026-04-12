@@ -11,8 +11,8 @@ const Home = () => {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Taha-Mahmoud-Noureldin-CV2.pdf";
-    link.download = "Taha-Mahmoud-Noureldin-CV2.pdf";
+    link.href = "/Taha_Mahmoud_Noureldin_CV.pdf";
+    link.download = "Taha_Mahmoud_Noureldin_CV.pdf";
     link.click();
   };
   // ANIMATIONS

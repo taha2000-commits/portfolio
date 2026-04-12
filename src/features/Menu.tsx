@@ -6,6 +6,7 @@ import useMenu from "../context/useMenu";
 const SECTIONS: { id: string; label: string }[] = [
   { id: "#home", label: "home" },
   { id: "#about", label: "aboutMe" },
+  { id: "#professional-experience", label: "professionalExperience" },
   { id: "#skills", label: "skills" },
   { id: "#projects", label: "projects" },
   { id: "#contact", label: "contact_me" },

@@ -16,5 +16,11 @@
   "lets_work": "Let's Work",
   "contact_me": "Contact Me",
   "home": "Home",
-  "language_changing": "Language Changing"
+  "language_changing": "Language Changing",
+  "professionalExperience": "Professional Experience",
+  "professional-experience-description": "I worked as a Frontend Developer using React.js, where I contributed to developing multiple web applications and the company’s internal portal. I was responsible for building interactive and user-friendly interfaces, with a strong focus on creating reusable components and enhancing overall user experience. I also integrated RESTful APIs to handle dynamic data and ensure seamless communication between the frontend and backend systems. During my role, I collaborated closely with backend developers and UI/UX designers to deliver high-quality products, while also improving application performance and resolving technical issues to ensure stability and efficiency.",
+  "startDate": "Start Date",
+  "endDate": "End Date",
+  "company": "Company"
+
 }
