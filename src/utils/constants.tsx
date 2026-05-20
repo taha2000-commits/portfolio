@@ -206,7 +206,7 @@ export const PROJECTS: ProjectType[] = [
     name: "Pretty makeup store",
     img: "/pretty-mockup.png",
     logo: "/pretty-makeup-icon.png",
-    visite_link: "https://pretty-makeup.netlify.app",
+    visite_link: "https://makeup-pretty.netlify.app/",
     technologies: [SKILLS[4], SKILLS[8], SKILLS[5], SKILLS[11]],
   },
 ];
